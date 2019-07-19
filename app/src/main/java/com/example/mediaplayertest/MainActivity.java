@@ -30,7 +30,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             btn_VideoView.setOnClickListener(this);
             btn_Decode.setOnClickListener(this);
             
-            
+             
     }
 
 
