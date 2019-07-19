@@ -47,6 +47,12 @@
                 android:id="@+id/textureView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <Button
+                android:textAllCaps="false"
+                android:text="DecodeTest"
+                android:id="@+id/decodeTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
 

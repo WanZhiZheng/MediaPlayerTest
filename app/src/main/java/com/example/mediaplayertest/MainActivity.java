@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    private Button btn_SurfaceView, btn_MusicPlayer, btn_VideoView,btn_ModifiedSurfaceView,btn_TextureView;
+    private Button btn_SurfaceView, btn_MusicPlayer, btn_VideoView,btn_ModifiedSurfaceView,btn_TextureView,btn_Decode;
     
 
 
@@ -22,11 +22,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
             btn_VideoView = (Button)findViewById(R.id.VideoView);
             btn_ModifiedSurfaceView = (Button)findViewById(R.id.modifiedsurfaceview);
             btn_TextureView=(Button)findViewById(R.id.textureView);
+            btn_Decode=(Button)findViewById(R.id.decodeTest);
             btn_ModifiedSurfaceView.setOnClickListener(this);
             btn_TextureView.setOnClickListener(this);
             btn_SurfaceView.setOnClickListener(this);
             btn_MusicPlayer.setOnClickListener(this);
             btn_VideoView.setOnClickListener(this);
+            btn_Decode.setOnClickListener(this);
             
             
     }
@@ -60,12 +62,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.modifiedsurfaceview:
                 Intent intent1=new Intent(MainActivity.this,ModifiedSurfaceViewActivity.class);
                 startActivity(intent1);
-                finish();
+
                 break;
 
             case R.id.textureView:
                 Intent intent4=new Intent(MainActivity.this,TextureViewActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.decodeTest:
+                Intent intent5=new Intent(MainActivity.this,DecodeTestActivity.class);
+                startActivity(intent5);
                 break;
 
         }
