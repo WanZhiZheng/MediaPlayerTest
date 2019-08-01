@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DecodeTestActivity"></activity>
+        <activity android:name=".MediaEditActivity"></activity>
+        <activity android:name=".DecodeTestActivity" />
         <activity android:name=".TextureViewActivity" />
         <activity android:name=".ModifiedSurfaceViewActivity" />
         <activity android:name=".MusicPlayer" />
